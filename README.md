@@ -29,13 +29,17 @@ Este proyecto pretende demostrar la funcionalidad de flex y grid al crear la est
 
 ## 🏁 Como usar <a name = "getting_started"></a>
 
-El proyecto se encuentra subido a github pages en el siguiente enlace:
+El proyecto se encuentra subido a github pages en el siguiente enlace: https://shuii18.github.io/cartaRestaurante/take-away.html
 
 Para ver el código simplemente clona este repositorio en tu propio ordenador.
 
+Las funcionalidades añadidas con javascript, se pueden ver en el menú desplegable cuando la página se encuentra en tamaño de dispositivo móbil, y en la página de 'Per Emportar' donde podremos añadir una cantidad en los dos primero items.
+
+En la próxima actualización añadiremos dicha funcionalidad a todos los items del menu.
+
 ### Prerequisites
 
-Este repositorio no requiere de ningun requisito.
+Este repositorio no tiene ningun requisito.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
