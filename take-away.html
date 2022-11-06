@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>MEXCLAT</title>
+  </head>
+  <body>
+    <!-- SM MENU -->
+    <div id="container-menu-sm">
+      <div class="menu-sm">
+        <ul>
+          <li class="menu-sm-item-1"><a href="index.html">HOME</a></li>
+          <li><a href="menu.html">CARTA</a></li>
+          <li><a href="take-away.html">PER EMPORTAR</a></li>
+          <li><a href="contact.html">CONTACTA</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- NAVBAR -->
+    <div class="nav-bar">
+      <div class="logo-img">
+        <a href="index.html">
+          <img src="imgs/mexclat-logo-tr.png" alt="" id="logo-img" />
+        </a>
+      </div>
+      <ul class="page-menu-md-lg">
+        <li class="home"><a href="index.html">HOME</a></li>
+        <li class="menu"><a href="menu.html">LA NOSTRE CARTA</a></li>
+        <li class="take-away"><a href="take-away.html">PER EMPORTAR</a></li>
+        <li class="contact"><a href="contact.html">CONTACTA</a></li>
+      </ul>
+      <div id="menuToggler" onclick="menu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="menu-container">
+        <h1>DEMANA A RECOLLIR</h1>
+        <hr />
+        <div class="menu-category">
+          <h1>TACOS</h1>
+          <div class="menu-category-dishes">
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+                <h3>VEGETARIÀ</h3>
+                <p>Mongetes, pebrot verd, tomàquet, ceba i xampinyons.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>FORÇUT DE POLLASTRE O VEDELLA</h3>
+              <p>
+                Pollastre o vedella, pebrot verd, ceba, bacó, pernil dolç i
+                tomàquet.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>PASTOR</h3>
+              <p>Vedella adobada, “achiote”, pinya i ceba.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>VEDELLA AMB SAMFAINA</h3>
+              <p>
+                Vedella, pebrot verd i vermell, ceba, tomàquet i albergínia.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>MEXCLAT</h3>
+              <p>
+                Barreja dels famosos “tacos” al pastor amb samfaina catalana.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>"ALAMBRE" DE POLLASTRE O VEDELLA</h3>
+              <p>Pollastre o vedella, pebrot verd i ceba.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+                <h3>CARN PICADA AMB SÍPIA</h3>
+ <p>
+                Vedella i sípia picada amb ceba i tomàquet, un plat típic català
+                adaptat als “tacs”.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>"CHILE" AMB CARN 🌶️</h3>
+              <p>Carn picada amb una salsa vermella mexicana i mongetes.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>TINGA DE POLLASTRE 🌶️🌶️</h3>
+              <p>Mongetes, pebrot verd, tomàquet, ceba i xampinyons.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>TINGA "MAR I MONTANYA" 🌶️🌶️</h3>
+              <p>
+                És la suma de la tinga i gambes. Contrast de carn i marisc amb
+                un gust picant.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>POLLASTRE AMB MOLE POBLANO 🌶️</h3>
+              <p>
+                Pollastre deshebrado barrejat amb “mole poblano”, platet més
+                notable de la cuina mexicana. És un contrast únic
+                dolç-salat-picant.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>POLLASTRE AMB MOLE VERD 🌶️</h3>
+              <p>El mole estil “michoacán”.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>POLLASTRE AL ROQUEFORT</h3>
+              <p>Pollastre amb una suau crema roquefort.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text"><h3>PICADILLO</h3>
+ <p>
+                Carn picada de vedella, poma, panses i ametlles. Plat típic
+                mexicà.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>VEDELLA AMB SALSA VERDA 🌶️</h3>
+              <p>
+                Barreja de vedella i salsa verda mexicana. Un gust inconfusible
+                una mica picant.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>COCHINITA PIBIL</h3>
+              <p>Carn de porc a l’estil “yucateco”.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>PICADA AMB ALBERGÍNIA</h3>
+              <p>Mongetes, pebrot verd, tomàquet, ceba i xampinyons.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>VEGETARIÀ</h3>
+              <p>
+                Carn picada amb albergínies en un sofregit deliciós i formatge
+                gratinat.
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <div class="menu-container">
+        <div class="menu-category">
+          <h1>ANTOJITOS</h1>
+          <div class="menu-category-dishes">
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+                 <h3>NACHOS AMB FORMATGE</h3>
+              <p>
+                Crema de formatge “cheddar” amb triangles de blat de moro
+                fregits.
+              </p>
+            </div>
+              <div class="menu-row-shop"><div class="shop-button">+</div>
+            <div class="shop-quantity"></div>
+          <div class="shop-button">-</div></div>
+              
+             
+          <hr> 
+            </div>
+           
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>NACHOS MEXCLAT</h3>
+              <p>
+                Nachos banyats amb formatge “cheddar”, Xile amb carn i salsa.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>GUACAMOLE AMB NACHOS</h3>
+              <p>Alvocat, ceba, tomàquet i una salsa mexicana especial.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>JALAPEÑOS 🌶️🌶️</h3>
+              <p>
+                Chiles “jalapeños” arrebossats i farcits de deliciós formatge
+                crema.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+              <h3>BOLES DE FORMATGE GOUDA AMB JALAPEÑO 🌶️🌶️</h3>
+
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>CHORIQUESO</h3>
+              <p>Formatge “cheddar” gratinat, amb xoriço picant i “truites”.</p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+ <h3>CHAMPIQUESO</h3>
+              <p>
+                Formatge “cheddar” gratinat amb xampinyons saltats i “truites”.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+             
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>COMBINAT DE TAPES GRAN</h3>
+              <p>
+                Assortiment gran de jalapeños, varetes de formatge, aletes de
+                pollastre i aros de ceba.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              <hr />
+            </div>
+            <div class="menu-row-take-away">
+              <div class="menu-row-text">
+<h3>COMBINAT DE TAPES MITJÀ</h3>
+              <p>
+                Assortiment mitjà de jalapeños, varetes de formatge, aletes de
+                formatge i aros de ceba.
+              </p>
+              </div>
+              <div class="menu-row-shop">
+<div class="shop-button">+</div>
+<div class="shop-quantity" id="shop-quantity"></div>
+<div class="shop-button">-</div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <footer>
+        <div class="footer-element">
+          <h2>LOCALIZACIÓN</h2>
+          <p>Carrer Santa Madrona 97,</p>
+          <p>08911 Badalona,</p>
+          <p>Barcelona</p>
+          <p>93 384 11 42</p>
+          <p>mexclat@taqueriamexicatalana.com</p>
+        </div>
+        <div class="footer-element">
+          <h2>MAPA WEB</h2>
+          <a href="index.html">HOME</a>
+          <a href="">CARTA</a>
+          <a href="">PER EMPORTAR</a>
+          <a href="">CONTACTA</a>
+        </div>
+        <div class="footer-element">
+          <h2>XARXES SOCIALS</h2>
+          <a href="">FACEBOOK</a>
+        </div>
+        <div class="footer-element">
+          <h2>INFORMACIÓ LEGAL</h2>
+          <p>Política de Cookies</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

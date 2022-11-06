@@ -1,0 +1,394 @@
+/* DEFINIMOS VARIABLES PARA TODA LA PÁGINA */
+
+:root {
+  --main-color-1: #22a0a1;
+  --main-color-2: #e4bf39;
+  --main-color-2-soft: #e0cc85;
+  --main-color-3: #db3d15;
+  --main-color-4: #db3d15;
+  --main-color-5: grey;
+  --main-font-1: Lato;
+  --main-font-menu-sm: Inter;
+}
+
+/* DEFINIMOS LOS ELEMENTOS QUE SERÁN IGUALES PARA TODAS LAS PAGINAS  */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font-1);
+}
+
+/* INDEX.HTML */
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--main-color-4);
+  font-weight: bolder;
+}
+
+h2 {
+  color: var(--main-color-5);
+  font-weight: bold;
+}
+
+h3 {
+  color: var(--main-color-4);
+  font-weight: bold;
+}
+
+p {
+  color: var(--main-color-5);
+}
+/* POP-UP MENU */
+
+/* LE DAMOS DISPLAY NONE PARA QUE NO SE MUESTRE HASTA QUE NO LO ACTIVE EL USUARIO */
+#container-menu-sm {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+}
+
+.menu-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-inline-end: 40px;
+}
+
+.menu-sm ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  height: 100%;
+  font-family: var(--main-font-menu-sm);
+  font-size: 2rem;
+}
+
+/* ANIMACIONES DEL POP-UP menu */
+
+/* CREAMOS EL ELEMENTO */
+.menu-sm-item-1::before {
+  content: "";
+  /* CON LA POSITION ABSOLUTE LE DECIMOS QUE SE PONGA ENCIMA DEL OBJETO YA EXISTENTE */
+  position: absolute;
+  /* LO POSICIONAMOS EN EL EJE 0 */
+  top: 0;
+  left: 0;
+  /* HACEMOS QUE OCUPE LO MISMO QUE EL PADRE */
+  width: 100%;
+  /* LE ASIGNAMOS UNA ALTURA */
+  height: 30%;
+  background-color: var(--main-color-2);
+  /* ASIGNAMOS QUE TODAS LAS TRANSFORMACIONES QUE APLIQUEMOS TENGAN UNA DURACIÓN DE 1S */
+  transition: all 1s;
+  /* LO POSICIONAMOS POR DETRAS DE NUESTRO ELEMENTO PRINCIPAL */
+  z-index: -1;
+  /* LO POSICIONAMOS UN 100% A LA IZQUIERDA DE NUESTRO ELEMENTO PARA QUE DESAPAREZCA DEL PLANO */
+  transform: translateX(-100%);
+}
+
+.menu-sm-item-1:hover:before {
+  /* LE DECIMOS QUE CUANDO HAGAMOS HOVER VUELVA A SU POSICON INICIAL */
+  transform: translateX(0);
+}
+
+/* REPETIMOS LO MISMO CON LOS OTROS HIJOS */
+.menu-sm ul :nth-child(2):hover:before {
+  transform: translateX(0);
+}
+
+.menu-sm ul :nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: var(--main-color-1);
+  transition: all 1s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+.menu-sm ul :nth-child(3):hover:before {
+  transform: translateX(0);
+}
+
+.menu-sm ul :nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: var(--main-color-3);
+  transition: all 1s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+.menu-sm ul :nth-child(4):hover:before {
+  transform: translateX(0);
+}
+
+.menu-sm ul :nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: var(--main-color-2);
+  transition: all 1s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+/* NAVBAR */
+
+/* NAV-BAR  */
+
+.nav-bar {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-style);
+  background-color: var(--main-color-1);
+  height: 80px;
+}
+
+#logo-img {
+  width: 150px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+li {
+  display: inline;
+}
+
+.page-menu-md-lg {
+  display: none;
+}
+
+#menuToggler {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  background-color: var(--main-color-2);
+}
+
+/* MAIN-CONTENT */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imgs/tacos-mexicanos.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* LANDING VIEW */
+.landing-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.banner {
+  height: 50px;
+  text-align: center;
+}
+
+.col-sm-1-col-md-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.entry p {
+  text-align: justify;
+}
+
+.space {
+  height: 100px;
+  width: 100%;
+  background-color: none;
+}
+
+/* FOOTER */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: black;
+  width: 100%;
+}
+
+footer p,
+footer a {
+  color: white;
+}
+
+.footer-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* MENU.HTML */
+
+.menu {
+  background-image: url(../imgs/chilaquiles.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20%;
+  background-position: 50%, 0;
+}
+
+.menu-container hr {
+  border: 2px solid var(--main-color-1);
+  width: 80%;
+}
+
+.menu h1 {
+  margin: 0;
+
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.menu-container {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.menu-category-dishes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.menu-row hr {
+  background-color: grey;
+  border: 1px lightgrey solid;
+  width: 90%;
+}
+
+/* TAKE AWAY */
+
+.menu-row-take-away {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.menu-row-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.shop-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightgrey;
+}
+
+.shop-quantity {
+  width: fit-content;
+  height: fit-content;
+}
+
+/* CONTACT.HTML */
+
+form {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+input {
+  height: 30px;
+  margin-top: 15px;
+}
+
+button {
+  margin-bottom: 10%;
+  border: none;
+  width: 50%;
+  height: 30px;
+  background-color: var(--main-color-1);
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+textarea {
+  margin-top: 20px;
+}
+
+/* RESPONSIVENESS */
+
+/* No nos hace falta adaptar para el rango de 576px-768px ya que se ve bien en esas medidas */
