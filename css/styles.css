@@ -397,6 +397,11 @@ textarea {
   margin-top: 20px;
 }
 
+.menu-row-take-away hr {
+  background-color: grey;
+  border: 1px lightgrey solid;
+  width: 90%;
+}
 /* RESPONSIVENESS */
 
 /* No nos hace falta adaptar para el rango de 576px-768px ya que se ve bien en esas medidas */
@@ -422,6 +427,9 @@ textarea {
 @media (min-width: 992px) {
   /* INDEX.HTML; */
 
+  .main-content {
+    padding-top: 10%;
+  }
   .col-sm-1-col-md-2 {
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
@@ -443,8 +451,33 @@ textarea {
     gap: 30px;
   }
 
+  /* FOOTER */
+
   footer {
     grid-template-columns: repeat(4, 1fr);
     align-items: flex-start;
+  }
+
+  footer a {
+    padding-top: 5%;
+  }
+
+  .nav-bar {
+    position: fixed;
+    width: 90%;
+  }
+
+  /* CONTACT */
+
+  input {
+    margin-right: 10%;
+  }
+
+  textarea {
+    margin-right: 10%;
+  }
+
+  form {
+    padding-top: 10%;
   }
 }
