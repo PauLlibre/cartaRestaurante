@@ -194,6 +194,10 @@ li {
   display: none;
 }
 
+.active {
+  color: #22a0a1;
+}
+
 #menuToggler {
   height: 50px;
   width: 50px;
@@ -392,3 +396,21 @@ textarea {
 /* RESPONSIVENESS */
 
 /* No nos hace falta adaptar para el rango de 576px-768px ya que se ve bien en esas medidas */
+
+@media (min-width: 756px) {
+  #menuToggler {
+    display: none;
+  }
+
+  .nav-bar {
+    background-color: white;
+  }
+  .page-menu-md-lg {
+    display: flex;
+  }
+
+  .page-menu-md-lg {
+    height: 100%;
+    align-items: center;
+  }
+}
