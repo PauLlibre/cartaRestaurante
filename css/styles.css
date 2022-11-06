@@ -259,6 +259,10 @@ li {
   text-align: justify;
 }
 
+.index-image {
+  display: none;
+}
+
 .space {
   height: 100px;
   width: 100%;
@@ -412,5 +416,35 @@ textarea {
   .page-menu-md-lg {
     height: 100%;
     align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  /* INDEX.HTML; */
+
+  .col-sm-1-col-md-2 {
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 5%;
+  }
+  .index-image {
+    display: flex;
+  }
+
+  .index-image-control {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .menu-category-dishes {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
   }
 }
