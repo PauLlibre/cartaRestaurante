@@ -14,9 +14,13 @@ document.getElementById("add1").addEventListener("click", function () {
 });
 
 document.getElementById("take1").addEventListener("click", function () {
-  number = Number(document.getElementById("shop-quantity1").innerHTML);
-  number--;
-  document.getElementById("shop-quantity1").innerHTML = number;
+  if (number <= 0) {
+    number = 0;
+  } else {
+    number = Number(document.getElementById("shop-quantity1").innerHTML);
+    number--;
+    document.getElementById("shop-quantity1").innerHTML = number;
+  }
 });
 
 document.getElementById("add2").addEventListener("click", function () {
