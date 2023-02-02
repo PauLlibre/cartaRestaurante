@@ -19,7 +19,7 @@ This project aims to demonstrate the functionality of flex and grid in creating 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-The project is hosted on GitHub Pages at the following link: https://shuii18.github.io/cartaRestaurante/take-away.html
+The project is hosted on GitHub Pages at the following link: https://paullibre.github.io/cartaRestaurante/
 
 To view the code simply clone this repository on your own computer.
 
