@@ -3,7 +3,7 @@
  <img width=200px height=200px src="imgs/mexclat-logo-tr.png" alt="Logo restaurante"></a>
 </p>
 
-<h3 align="center">RESTAURANTE RESPONSIVE WEBPAGE</h3>
+<h3 align="center">RESTAURANT RESPONSIVE WEBPAGE</h3>
 
 ---
 
