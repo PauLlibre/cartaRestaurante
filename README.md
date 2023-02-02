@@ -3,13 +3,9 @@
  <img width=200px height=200px src="imgs/mexclat-logo-tr.png" alt="Logo restaurante"></a>
 </p>
 
-<h3 align="center">PÁGINA RESTAURANTE RESPONSIVE</h3>
+<h3 align="center">RESTAURANTE RESPONSIVE WEBPAGE</h3>
 
 ---
-
-<p align="center"> En este proyecto emos creado la página web de un restaurante usando HTML y CSS además de haber agregado cierta funcionalidad
-    <br> 
-</p>
 
 ## 📝 Table of Contents
 
