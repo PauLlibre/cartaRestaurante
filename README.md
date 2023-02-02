@@ -19,28 +19,29 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Este proyecto pretende demostrar la funcionalidad de flex y grid al crear la estructura de una página web responsive, además del uso de HTML y CSS para ello. También pretende demostrar la funcionalidad de crear varios archivos .html para diferentes páginas dentre de un mismo sitio web.
+This project aims to demonstrate the functionality of flex and grid in creating a responsive website structure, using HTML and CSS. It also aims to demonstrate the capability of creating multiple .html files for different pages within a single website.
 
-## 🏁 Como usar <a name = "getting_started"></a>
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-El proyecto se encuentra subido a github pages en el siguiente enlace: https://shuii18.github.io/cartaRestaurante/take-away.html
+The project is hosted on GitHub Pages at the following link: https://shuii18.github.io/cartaRestaurante/take-away.html
 
-Para ver el código simplemente clona este repositorio en tu propio ordenador.
+To view the code simply clone this repository on your own computer.
 
-Las funcionalidades añadidas con javascript, se pueden ver en el menú desplegable cuando la página se encuentra en tamaño de dispositivo móbil, y en la página de 'Per Emportar' donde podremos añadir una cantidad en los dos primero items.
+The functionality added with JavaScript can be seen in the drop-down menu when the page is viewed on a mobile device, and on the "Take-Away" page where you can add a quantity to the first two items.
 
-En la próxima actualización añadiremos dicha funcionalidad a todos los items del menu.
+In the next update, we will add this functionality to all menu items.
 
 ### Prerequisites
 
-Este repositorio no tiene ningun requisito.
+This repository has no prerequisites.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [HTML](https://www.html5.com/) - Estructura
-- [CSS](https://www.css.com/) - Estilaje
-- [JAVASCRIPT](https://www.javascript.org/) - Funcionalidad
+- [HTML](https://www.html5.com/) - Structure
+- [CSS](https://www.css.com/) - Styling
+- [JavaScript](https://www.javascript.org/) - Functionality 
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@shuii18](https://github.com/shuii18) - Idea & Desarroolo
+- [@PauLlibre](https://github.com/PauLlibre) - Idea & Development
+
